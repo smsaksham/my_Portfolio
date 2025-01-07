@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
+    <!-- remix icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" 
+    integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+     integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+<body id="myPage" class="bg-cover overflow-x-hidden" onload="load()">
+                    <!-- navbar -->
+         <div class="">
+                <nav class="flex fixed px-5 lg:px-8 xl:px-[8%] py-2 items-center z-50 w-full justify-between top-0 ">
+                <div class="navbar-brand cursor-pointer">
+                 <h2>SM SAKSHAM<span>.</span></h2>
+                </div>
+                <ul class="hidden gap-6 lg:gap-8 rounded-full px-3
+                  bg-white text-black font-semibold  bg-opacity-50 shadow-sm md:flex nav-item ">
+                    <li class="target hover:bg-slate-50 rounded-xl py-1 px-3"><a href="#myPage" class="nav-item nav-link">Home</a></li>
+                    <li class="target hover:bg-slate-50 rounded-xl py-1 px-3"><a href="#services"class="nav-item nav-link">Service</a></li>
+                    <li class="target hover:bg-slate-50 rounded-xl py-1 px-3"><a href="#AboutMe" class="nav-item nav-link">About Me</a></li>
+                    <li class="target hover:bg-slate-50 rounded-xl py-1 px-3"><a href="#contact" class="nav-item nav-link">Contact</a></li>
+                </ul> 
+                <ul class="flex items-center">
+                    <button class=" lg:flex items-center px-8 py-3 border border-gray-500 rounded-full
+                        ml-3 cursor-pointer hover:scale-[1.01] btn btn-warning" >Contact Me</button>
+                    <button class="py-3 px-5 sm:block md:hidden bg-lime-700 rounded-lg "  onclick="openMenu()">
+                    <span class="navbar-toggler"><i class="ri-menu-line"></i></span>
+                      </button>
+                </ul>
+
+                <!--mobile menu block -->
+                <ul id='sideMenu'class="md:hidden flex flex-col py-20 px-10 h-[50%] rounded-2xl
+                gap-4 text-lg nav-item fixed -right-60 top-0 bottom-0 w-64 z-50 bg-rose-50 text-black
+                transition duration-500 menu">
+                <button class=" absolute right-8 top-10 md:hidden" onclick="closeMenu()"><i class="ri-close-line"></i></button>
+                  <li><a href="#myPage" class="nav-item nav-link"onclick="closeMenu()">Home</a></li>
+                  <li><a href="#services"class="nav-item nav-link"onclick="closeMenu()">Service</a></li>
+                  <li><a href="#AboutMe" class="nav-item nav-link"onclick="closeMenu()">About Me</a></li>
+                  <li><a href="#contact" class="nav-item nav-link"onclick="closeMenu()">Contact</a></li>
+              </ul>
+            </nav>
+        </div>
+     <!-- home page -->
+     <div class="page1 container-xxl w-full h-screen px-10 md:flex block pt-20 " >
+            <div class="left-container container flex flex-col w-90 gap-10 items-center 
+                        justify-center text-center">
+                <div class="main-header w-full text-4xl">
+                    <h1 class="head"><span>Hii I Am</span> <span>Front</span>-<span>End</span>-<span>Developer</span></h1>
+                </div>
+                <div class="details-header ">
+                    <p>I’m a Web developer & I’m very passionate and dedicated to my work.
+                         I have acquired the skills and knowledge necessary to make your project a success.</p>
+                </div>
+                    <a class=" py-4 px-8 rounded-2xl bg-orange-400 hover:shadow-[3px_4px_12px_]" href="my-resume.pdf" download="" role="button">Download CV</a>
+                <div class="second-buttons flex justify-evenly w-96 ">
+                    <a href="#AboutMe"><button class="btn focus:text-orange-500 ">AboutMe</button></a>
+                    <a href="#AboutMe" ><button class="btn focus:text-orange-500">&nbsp;&nbsp;Stock&nbsp;&nbsp;</button></a>
+                </div>
+                
+         </div>
+                <div class=" right-container container -mt-24 md:-mt-24 py-9">
+                     <img src="./IMG_0244-removebg-preview.png" alt="" >
+                </div>
+    </div>
+<!-- Services  -->
+        <div id="services" class="page2 w-full sm:mt-5 mt-40 font-semibold px-8 py-12 ">
+            <h2 class="text-center text-5xl pb-7 mt-3">What I Provided</h2>
+            <p >We bulit Hight-quality Websites for nonprofits . but it doesn't stor there. We believe in elevating nonprofits to 
+                do more by giving them the best nonprofit website designs
+                so they can spark even genter change.How will your nonprofit take it to 
+                the next level?
+            </p>
+                <ul class="lg:flex sm:block items-center justify-center md:gap-5 ">
+                    <li class="h-30 w-30 items-center justify-items-center bg-stone-400 rounded-2xl py-4 px-6 mt-10">
+                        <h4 class="bg-rose-400 w-full py-2 px-3 text-center">NonProfit Website Design</h4>
+                        <div class="py-4">
+                                <img src="./19362653.jpg" alt="" width="100%" >
+                        </div>
+                        <p class="">The Best NonProfit Website design are not only
+                            asheticlly beatuful , they also effectively communicate 
+                            a nonprofit's mission and its objectives width
+                            innovative and creative design
+                        </p>
+                    </li>
+
+                    <li class="h-30 w-30 items-center justify-items-center bg-stone-400 rounded-2xl py-4 px-6 mt-10">
+                        <h4 class="bg-rose-400 w-full py-2 px-3 text-center">NonProfit Website Design</h4>
+                        <div class="py-4">
+                            <img src="./19362653.jpg" alt="" width="100%" >
+                        </div>
+                        <p class="text-center">The Best NonProfit Website design are not only
+                            asheticlly beatuful , they also effectively communicate 
+                            a nonprofit's mission and its objectives width
+                            innovative and creative design
+                        </p>
+                    </li>
+
+                    <li class="h-30 w-30 items-center justify-items-center bg-stone-400 rounded-2xl py-4 px-6 mt-10">
+                        <h4 class="bg-rose-400 w-full py-2 px-3 text-center">NonProfit Website Design</h4>
+                        <div class="py-4">
+                            <img src="./19362653.jpg" alt="" width="100%" >
+                        </div>
+                        <p class="text-center">The Best NonProfit Website design are not only
+                            asheticlly beatuful , they also effectively communicate 
+                            a nonprofit's mission and its objectives width
+                            innovative and creative design
+                        </p>
+                    </li>
+
+                    <li class="h-30 w-30 items-center justify-items-center bg-stone-400 rounded-2xl py-4 px-6 mt-10">
+                        <h4 class="bg-rose-400 w-full py-2 px-3 text-center">NonProfit Website Design</h4>
+                        <div class="py-4">
+                            <img src="./19362653.jpg" alt="" width="100%" >
+                        </div>
+                        <p class="text-center">The Best NonProfit Website design are not only
+                            asheticlly beatuful , they also effectively communicate 
+                            a nonprofit's mission and its objectives width
+                            innovative and creative design
+                        </p>
+                    </li>
+                </ul>
+        </div>
+        <!-- About me -->
+         <div class="AboutMe h-screen w-full md:py-20 md:px-8 px-5" id="AboutMe">
+            <h1 class="text-6xl font-semibold">About Page</h1>
+            <div class=" py-5  w-[70%]  text-pretty">
+                    <h1 class="text-4xl py-3 text-orange-300">Hi I'm Saksham Malviya</h1>
+                <h5> A front-end developer who enjoys creating interactive and visually appealing websites. I specialize in HTML, CSS, JavaScript, and GSAP (GreenSock Animation Platform), which help me design smooth and dynamic user interfaces.
+
+                    I focus on making websites that are not only responsive and clean but also fun and engaging to use. I aim to combine great design with functionality to deliver an excellent user experience.
+                    
+                    When I'm not working on projects, I like to explore new web technologies, try out creative animations, or learn new skills to keep improving.
+                    
+                    Let’s create something great together!
+                    </h5>
+            </div>
+            <div class=" py-2 w-full text-center">
+                <a href="https://www.linkedin.com/in/saksham-malviya-52b461332/" target="_blank"><button class="py-3 px-4 rounded-2xl bg-black" >GET IN TUCH</button></a>
+            </div>
+        </div>
+        <!-- contact -->
+    <div class="w-full h-screen px-6 py-12 md:-py-12" id="contact">
+    <section class=" w-full flex  ">
+      <div class="md:flex ">
+        <div class="w-full md:w-[50%]  ">
+        <h2 class="text-7xl font-semibold text-center">Let's Connect</h2>
+          <div class='connect-img'>
+          <!-- <img src="\public\acets\image\9968602.png"height={80} /> -->
+          </div>
+          <div class=''>
+            <h3 class="text-center mt-7">As a web developer, I specialize in creating user-friendly, innovative websites and applications—let's 
+              connect to bring your ideas to life!
+            </h3>
+          </div>
+          <div class='mt-6'>
+            <h3 class=" text-center">Follow Me On My Social Media Platforms</h3>
+          </div> 
+          <div class='text flex justify-evenly mt-6'>
+          <a href="https://www.instagram.com/sm.saksham/" class=''> <i class="ri-instagram-line border-gray-700 py-2 px-2
+            hover:text-orange-400 hover:border-orange-400 rounded-md text-xl border"></i>        </a>
+          <a href="" class='icon'><i class="ri-linkedin-box-fill border-gray-700 py-2 px-2
+            hover:text-orange-400 hover:border-orange-400 rounded-md text-xl border"></i>  </a>
+          <a href="" class='icon'><i class="ri-skype-fill border-gray-700 py-2 px-2
+            hover:text-orange-400 hover:border-orange-400 rounded-md text-xl border"></i>         </a>
+          <a href="" class='icon'> <i class="ri-github-fill border-gray-700 py-2 px-2
+            hover:text-orange-400 hover:border-orange-400 rounded-md text-xl border"></i>       </a>
+          </div>
+        </div>
+        <!-- form  -->
+         <form class='w-full md:w-[50%] h-4/6 md:h-full bg-gray-900 py-6 px-8 rounded-2xl mt-3' action="https://api.web3forms.com/submit" method="POST"
+          >
+         <h2 class="font-semibold text-3xl text-center">FeedBack</h2> 
+         <input type="hidden" name="access_key" value="39e8830b-0a4d-4141-ba3a-1436c811c625">
+        <div class=" ">
+            <label htmlFor="email" class="">Enter Name</label>
+            <div class="bg-slate-200 rounded-2xl pl-3">
+            <i class="ri-user-fill text-black" ></i>
+            <input type="text" id="name" name="name" class="bg-transparent text-black
+              h-9 w-11/12 pl-2 outline-none " placeholder="Enter your name" />
+            </div>
+            <div class="error" id="emailError">Please enter a valid email address</div>
+        </div>
+        <div class="form-group">
+            <label htmlFor="password" class="label">Enter Your Gmail</label>
+            <div class="bg-slate-200 rounded-2xl pl-3">
+                <i class="ri-mail-fill  text-black "></i>
+                <input type="text" id="email" name="email" class="bg-transparent text-black
+                h-9 w-11/12 pl-2 outline-none " placeholder="Drop You Email" />
+            </div>
+            <div class="error" id="passwordError">Password must be at least 6 characters</div>
+        </div>
+        <div class="form-group">
+            <label htmlFor="password" class="label">Message</label>
+            <div class="bg-slate-200 rounded-2xl pl-3">
+                <textarea id="message" name="message" rows="4" class="textarea bg-transparent text-black
+                w-11/12 py-2 outline-none " placeholder='Write Your Feedback'></textarea>
+            </div>
+        </div>
+            <div class="text-center mt-3">
+                <button type="submit" class="py-2 px-8 text-center bg-orange-400 rounded-xl">
+                 <i class="fas fa-sign-in-alt"></i> Post 
+                </button>
+            </div>
+    </form>
+            
+      </div>
+    </section>
+    </div>
+
+<!-- gsap -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+ integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+crossorigin="anonymous"referrerpolicy="no-referrer"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendEmail(){
+        Email.send({
+    Host : "smtp.gmail.com",
+    Username : "username",
+    Password : "password",
+    To : 'them@website.com',
+    From : "you@isp.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+    }
+</script>
+    <script src="./script.js"></script>
+</body>
+</html>

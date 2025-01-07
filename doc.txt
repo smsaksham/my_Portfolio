@@ -1,0 +1,19 @@
+    => Git
+    => git is a distributed version control system
+    => manageing porojects to using git 
+    => its is like a managing porojects version 
+    => track the product changes 
+    => its create a version history 
+    => collebration with team and manage the porojects
+    => git id s commsnd line it ueses for uploading a porojects to github 
+    => 
+
+    key feature of git 
+    => distributed version control
+    => branching and merging
+    => commit history
+    => effeient haddling 
+    => collebrative tool's
+    
+    =>Github
+    github is a web-based paltform that ueses git for version control 
